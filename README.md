@@ -8,9 +8,10 @@ Babel plugin to transform assignment through value types into appropriate copy o
 ### Input:
 
 ```javascript
-const foobar = _becomeValue({ foo: "bar" });
+const foobar = #{ foo: "bar" };
 let foobaz = foobar;
 foobaz.foo = "baz";
+console.log(foobar === #{ foo: "bar" });
 ```
 
 ### Output:
@@ -19,4 +20,7 @@ foobaz.foo = "baz";
 const foobar = _becomeValue({ foo: "bar" });
 let foobaz = foobar;
 foobaz = _assignProperty(foobaz, "foo", "baz");
+console.log(_valueStrictEquals(foobar, _becomeValue({ foo: "bar" })));
 ```
+
+Currently the TypeScript types don't match up during compilation, so ignore any errors during `npm run prepare` :)
