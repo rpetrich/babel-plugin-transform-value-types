@@ -1,0 +1,1 @@
+const foobar=_becomeValue({foo:"bar"});const isEqual=foobar==={foo:"bar"};

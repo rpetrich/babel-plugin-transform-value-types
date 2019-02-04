@@ -1,0 +1,1 @@
+const foobarbaz={foo:_becomeValue({bar:"baz"})};const copy=foobarbaz;copy.foo=_assignProperty(copy.foo,"bar","baz");

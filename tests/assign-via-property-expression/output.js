@@ -1,0 +1,1 @@
+let _baz;const foobar=_becomeValue({foo:"bar"});let foobaz=foobar;const baz=(foobaz=_assignProperty(foobaz,"foo",_baz="baz"),_baz);

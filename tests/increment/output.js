@@ -1,0 +1,1 @@
+const point=_becomeValue({x:0,y:0});let copy=point;copy=_assignProperty(copy,"x",copy.x+10);

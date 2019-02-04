@@ -1,0 +1,5 @@
+node_modules
+babel-plugin-transform-value-types-*.tgz
+coverage
+value-types.js
+value-types.js.map

@@ -1,0 +1,33 @@
+{
+  "name": "babel-plugin-transform-value-types",
+  "version": "0.0.1",
+  "description": "Rewrite calls to value types to be correct",
+  "main": "value-types.js",
+  "scripts": {
+    "prepare": "tsc --strict --lib es5,es6,es2016 --types node --module commonjs --sourceMap value-types.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpetrich/babel-plugin-transform-value-types.git"
+  },
+  "keywords": [
+    "value",
+    "babel",
+    "compile",
+    "transform"
+  ],
+  "author": "Ryan Petrich <rpetrich@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rpetrich/babel-plugin-transform-value-types/issues"
+  },
+  "homepage": "https://github.com/rpetrich/babel-plugin-transform-value-types#readme",
+  "devDependencies": {
+    "@babel/core": "../babel/packages/babel-core",
+    "@types/babel__traverse": "^7.0.5",
+    "@types/node": "^10.12.21",
+    "jest": "^24.0.0",
+    "typescript": "^3.3.1"
+  }
+}
